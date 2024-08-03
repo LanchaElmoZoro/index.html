@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skibidi Toilet Animation</title>
+  <style>
+    #toilet-container {
+      width: 300px;
+      height: 300px;
+      position: relative;
+    }
+
+    #toilet {
+      width: 100px;
+      height: 150px;
+      background-image: url('https://via.placeholder.com/100x150?text=Toilet');
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: toilet-dance 5s infinite linear;
+    }
+
+    @keyframes toilet-dance {
+      0% { transform: translateX(-50%) rotate(0deg); }
+      25% { transform: translateX(-50%) rotate(10deg); }
+      50% { transform: translateX(-50%) rotate(0deg); }
+      75% { transform: translateX(-50%) rotate(-10deg); }
+      100% { transform: translateX(-50%) rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="toilet-container">
+    <div id="toilet"></div>
+  </div>
+
+  <script>
+    // Add some music
+    const audio = new Audio('https://example.com/skibidi-music.mp3');
+    audio.loop = true;
+    audio.play();
+  </script>
+</body>
+</html>
+doudoudouskibidi
